@@ -10,11 +10,10 @@ class ProgressIcons extends StatelessWidget {
   Widget build(BuildContext context) {
     final iconSize = 50.0;
 
-    final doneIcon = Icon(Icons.beenhere_outlined,
-        color: Colors.orange[100], size: iconSize);
+    final doneIcon = Icon(Icons.beenhere, color: Colors.orange, size: iconSize);
 
-    final notDoneIcon =
-        Icon(Icons.beenhere, color: Colors.orange, size: iconSize);
+    final notDoneIcon = Icon(Icons.beenhere_outlined,
+        color: Colors.orange[100], size: iconSize);
 
     List<Icon> icons = [];
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pomodoro/model/pomodoro_status.dart';
 
-const pomodoroTotalTime = 258 * 60;
+const pomodoroTotalTime = 1 * 60;
 
 const shortBreakTime = 5 * 60;
 const longBreakTime = 15 * 60;
