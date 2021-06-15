@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:pomodoro/widget/progress_icons.dart';
+import 'package:pomodoro/widget/custom_button.dart';
+import 'package:pomodoro/model/pomodoro_status.dart';
 
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
+
+const _btnTextStart = 'START POMODORO';
+const _btnTextResumePomodoro = 'RESUME POMODORO';
+const _btntextResumeBreak = "RESUME BREAK";
+const _btnTextStartBreak = 'TAKE SHORT BREAK';
+const _btnTextStartLongBreak = 'TAKE LONG BREAK';
+const _btnTextStartNewSet = 'START NEWSET';
+const _btnTextPause = 'PAUSE';
+const _btnTextReset = 'RESET';
 
 class _HomeState extends State<Home> {
   @override
@@ -51,6 +62,21 @@ class _HomeState extends State<Home> {
                   ProgressIcons(
                     total: 4,
                     done: 3,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'status description',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  CustomButton(
+                    onTap: () {},
+                    text: 'Start',
+                  ),
+                  CustomButton(
+                    onTap: () {},
+                    text: 'Reset',
                   ),
                 ],
               ),
